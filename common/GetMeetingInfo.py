@@ -17,7 +17,9 @@ import json
 import traceback
 #导入自定义模块
 from common.logger import logger
-
+#解决python的str默认是ascii编码，和unicode编码冲突
+reload(sys)
+sys.setdefaultencoding('utf8')
 #设置配置文件
 path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 seeting_file = os.path.join(path,'conf\seeting.ini')
@@ -38,6 +40,10 @@ MeetingType = conf.get("entName","type")
 GetUserInfoApi = conf.get("api","GetUserInfo")
 #POST请求头的信息
 Headers = {"Content-type": "application/x-www-form-urlencoded","X-Requested-With":"XMLHttpRequest"}
+#登陆请求的参数
+LoginApiParams = urllib.urlencode({"username":"admin","userpwd":"654321"})
+#获取会议信息的参数
+GetInfoApiParams = urllib.urlencode({"userId":"","meetingId":"","relayId":"","startTime":starttime,"endTime":endtime,"currPage":1,"directionType":"undefined","companyName":MeetingType})
 
 #根据配置文件获取指定时间点的会议信息
 class GetMeetingInfo(object):
@@ -70,13 +76,6 @@ class GetMeetingInfo(object):
         except:
             s = traceback.format_exc()
             logger().error(s)
-
-LoginApiParams = urllib.urlencode({"username":"admin","userpwd":"654321"})
-MeetingApi = GetMeetingInfo(MeetingLoginApi,LoginApiParams,Headers)
-MeetingApi.Login()
-GetInfoApiParams = urllib.urlencode({"userId":"","meetingId":"","relayId":"","startTime":starttime,"endTime":endtime,"currPage":1,"directionType":"undefined","companyName":MeetingType})
-MeetingApi = GetMeetingInfo(GetMeetingInfoApi,GetInfoApiParams,Headers)
-MeetingApi.GetInfo()
 
 class GetDetailedInformation(object):
 
@@ -124,7 +123,11 @@ class GetDetailedInformation(object):
         MeetingDurationList = []
         for item in range(self.List_len()):
             MeetingDuration = self.AvailableMeetingList()[item]["duration"]
-            MeetingDurationList.append(MeetingDuration)
+            h = MeetingDuration / 3600
+            m = (MeetingDuration - h * 3600) / 60
+            ss = MeetingDuration - h * 3600 - m * 60
+            MeetingDurationTime = str(h)+"小时"+str(m)+"分钟"+str(ss)+"秒"
+            MeetingDurationList.append(MeetingDurationTime)
 
         return MeetingDurationList
 
@@ -134,19 +137,23 @@ class GetDetailedInformation(object):
         isQualifiedCountList = []
         PtoPTotalQualifiedPercentList = []
         for item in range(self.List_len()):
-            isQualified = self.AvailableMeetingList()[item]["c2cquality"]
-            isQualifiedstr = isQualified.encode("utf-8")
-            isQualifiedList = isQualified.split("|")
-            for item in range(len(isQualifiedList)):
-                isQualifiedList2 = isQualifiedList[item].split("/")
-                isQualifiedCountList.append(isQualifiedList2)
-            for item in range(len(isQualifiedList)):
-                Qualified = int(isQualifiedCountList[item][2])
-                if Qualified == 1:
-                    isQualifiedSum+=1
-            PtoPTotal = len(isQualifiedList)
-            PtoPTotalQualifiedPercent = str(isQualifiedSum / PtoPTotal * 100) + "%"
+            if "c2cquality" in self.AvailableMeetingList()[item].keys():
+                isQualified = self.AvailableMeetingList()[item]["c2cquality"]
+                isQualifiedstr = isQualified.encode("utf-8")
+                isQualifiedList = isQualified.split("|")
+                for item in range(len(isQualifiedList)):
+                    isQualifiedList2 = isQualifiedList[item].split("/")
+                    isQualifiedCountList.append(isQualifiedList2)
+                for item in range(len(isQualifiedList)):
+                    Qualified = int(isQualifiedCountList[item][2])
+                    if Qualified == 1:
+                        isQualifiedSum+=1
+                PtoPTotal = len(isQualifiedList)
+                PtoPTotalQualifiedPercent = str(int(float(isQualifiedSum) / float(PtoPTotal) * 100)) + "%"
+            else:
+                PtoPTotalQualifiedPercent = "空数据"
             PtoPTotalQualifiedPercentList.append(PtoPTotalQualifiedPercent)
+            isQualifiedSum = 0
 
         return PtoPTotalQualifiedPercentList
 
@@ -156,18 +163,22 @@ class GetDetailedInformation(object):
         isQualifiedCountList = []
         PacketLossAverageList = []
         for item in range(self.List_len()):
-            isQualified = self.AvailableMeetingList()[item]["c2cquality"]
-            isQualifiedstr = isQualified.encode("utf-8")
-            isQualifiedList = isQualified.split("|")
-            for item in range(len(isQualifiedList)):
-                isQualifiedList2 = isQualifiedList[item].split("/")
-                isQualifiedCountList.append(isQualifiedList2)
-            for item in range(len(isQualifiedList)):
-                PacketLoss = int(isQualifiedCountList[item][3])
-                PacketLossSum+=PacketLoss
-            PacketLossCount = len(isQualifiedList) * 100
-            PacketLossAverage = str(int(float(PacketLossSum) / float(PacketLossCount) * 100)) + "%"
+            if "c2cquality" in self.AvailableMeetingList()[item].keys():
+                isQualified = self.AvailableMeetingList()[item]["c2cquality"]
+                isQualifiedstr = isQualified.encode("utf-8")
+                isQualifiedList = isQualified.split("|")
+                for item in range(len(isQualifiedList)):
+                    isQualifiedList2 = isQualifiedList[item].split("/")
+                    isQualifiedCountList.append(isQualifiedList2)
+                for item in range(len(isQualifiedList)):
+                    PacketLoss = int(isQualifiedCountList[item][3])
+                    PacketLossSum+=PacketLoss
+                PacketLossCount = len(isQualifiedList) * 100
+                PacketLossAverage = str(int(float(PacketLossSum) / float(PacketLossCount) * 100)) + "%"
+            else:
+                PacketLossAverage = "空数据"
             PacketLossAverageList.append(PacketLossAverage)
+            PacketLossSum = 0
 
         return PacketLossAverageList
 
@@ -177,18 +188,22 @@ class GetDetailedInformation(object):
         isQualifiedCountList = []
         SoundPacketLossAverageList = []
         for item in range(self.List_len()):
-            isQualified = self.AvailableMeetingList()[item]["c2cquality"]
-            isQualifiedstr = isQualified.encode("utf-8")
-            isQualifiedList = isQualified.split("|")
-            for item in range(len(isQualifiedList)):
-                isQualifiedList2 = isQualifiedList[item].split("/")
-                isQualifiedCountList.append(isQualifiedList2)
-            for item in range(len(isQualifiedList)):
-                SoundPacketLoss = int(isQualifiedCountList[item][5])
-                SoundPacketLossSum += SoundPacketLoss
-            SoundPacketLossCount = len(isQualifiedList) * 100
-            SoundPacketLossAverage = str(int(float(SoundPacketLossSum) / float(SoundPacketLossCount) * 100)) + "%"
+            if "c2cquality" in self.AvailableMeetingList()[item].keys():
+                isQualified = self.AvailableMeetingList()[item]["c2cquality"]
+                isQualifiedstr = isQualified.encode("utf-8")
+                isQualifiedList = isQualified.split("|")
+                for item in range(len(isQualifiedList)):
+                    isQualifiedList2 = isQualifiedList[item].split("/")
+                    isQualifiedCountList.append(isQualifiedList2)
+                for item in range(len(isQualifiedList)):
+                    SoundPacketLoss = int(isQualifiedCountList[item][5])
+                    SoundPacketLossSum += SoundPacketLoss
+                SoundPacketLossCount = len(isQualifiedList) * 100
+                SoundPacketLossAverage = str(int(float(SoundPacketLossSum) / float(SoundPacketLossCount) * 100)) + "%"
+            else:
+                SoundPacketLossAverage = "空数据"
             SoundPacketLossAverageList.append(SoundPacketLossAverage)
+            SoundPacketLossSum = 0
 
         return SoundPacketLossAverageList
 
@@ -198,16 +213,19 @@ class GetDetailedInformation(object):
         PacketLossTempList = []
         PacketLossMaxList = []
         for item in range(self.List_len()):
-            isQualified = self.AvailableMeetingList()[item]["c2cquality"]
-            isQualifiedstr = isQualified.encode("utf-8")
-            isQualifiedList = isQualified.split("|")
-            for item in range(len(isQualifiedList)):
-                isQualifiedList2 = isQualifiedList[item].split("/")
-                isQualifiedCountList.append(isQualifiedList2)
-            for item in range(len(isQualifiedList)):
-                PacketLoss = int(isQualifiedCountList[item][3])
-                PacketLossTempList.append(PacketLoss)
-            PacketLossMax = str(max(PacketLossTempList)) + "%"
+            if "c2cquality" in self.AvailableMeetingList()[item].keys():
+                isQualified = self.AvailableMeetingList()[item]["c2cquality"]
+                isQualifiedstr = isQualified.encode("utf-8")
+                isQualifiedList = isQualified.split("|")
+                for item in range(len(isQualifiedList)):
+                    isQualifiedList2 = isQualifiedList[item].split("/")
+                    isQualifiedCountList.append(isQualifiedList2)
+                for item in range(len(isQualifiedList)):
+                    PacketLoss = int(isQualifiedCountList[item][3])
+                    PacketLossTempList.append(PacketLoss)
+                PacketLossMax = str(max(PacketLossTempList)) + "%"
+            else:
+                PacketLossMax = "空数据"
             PacketLossMaxList.append(PacketLossMax)
 
         return PacketLossMaxList
@@ -218,16 +236,19 @@ class GetDetailedInformation(object):
         SoundPacketLossTempList = []
         SoundPacketLossMaxList = []
         for item in range(self.List_len()):
-            isQualified = self.AvailableMeetingList()[item]["c2cquality"]
-            isQualifiedstr = isQualified.encode("utf-8")
-            isQualifiedList = isQualified.split("|")
-            for item in range(len(isQualifiedList)):
-                isQualifiedList2 = isQualifiedList[item].split("/")
-                isQualifiedCountList.append(isQualifiedList2)
-            for item in range(len(isQualifiedList)):
-                SoundPacketLoss = int(isQualifiedCountList[item][5])
-                SoundPacketLossTempList.append(SoundPacketLoss)
-            SoundPacketLossMax = str(max(SoundPacketLossTempList)) + "%"
+            if "c2cquality" in self.AvailableMeetingList()[item].keys():
+                isQualified = self.AvailableMeetingList()[item]["c2cquality"]
+                isQualifiedstr = isQualified.encode("utf-8")
+                isQualifiedList = isQualified.split("|")
+                for item in range(len(isQualifiedList)):
+                    isQualifiedList2 = isQualifiedList[item].split("/")
+                    isQualifiedCountList.append(isQualifiedList2)
+                for item in range(len(isQualifiedList)):
+                    SoundPacketLoss = int(isQualifiedCountList[item][5])
+                    SoundPacketLossTempList.append(SoundPacketLoss)
+                SoundPacketLossMax = str(max(SoundPacketLossTempList)) + "%"
+            else:
+                SoundPacketLossMax = "空数据"
             SoundPacketLossMaxList.append(SoundPacketLossMax)
 
         return SoundPacketLossMaxList
@@ -238,16 +259,19 @@ class GetDetailedInformation(object):
         PacketLossTempList = []
         PacketLossMinList = []
         for item in range(self.List_len()):
-            isQualified = self.AvailableMeetingList()[item]["c2cquality"]
-            isQualifiedstr = isQualified.encode("utf-8")
-            isQualifiedList = isQualified.split("|")
-            for item in range(len(isQualifiedList)):
-                isQualifiedList2 = isQualifiedList[item].split("/")
-                isQualifiedCountList.append(isQualifiedList2)
-            for item in range(len(isQualifiedList)):
-                PacketLoss = int(isQualifiedCountList[item][3])
-                PacketLossTempList.append(PacketLoss)
-            PacketLossMin = str(min(PacketLossTempList)) + "%"
+            if "c2cquality" in self.AvailableMeetingList()[item].keys():
+                isQualified = self.AvailableMeetingList()[item]["c2cquality"]
+                isQualifiedstr = isQualified.encode("utf-8")
+                isQualifiedList = isQualified.split("|")
+                for item in range(len(isQualifiedList)):
+                    isQualifiedList2 = isQualifiedList[item].split("/")
+                    isQualifiedCountList.append(isQualifiedList2)
+                for item in range(len(isQualifiedList)):
+                    PacketLoss = int(isQualifiedCountList[item][3])
+                    PacketLossTempList.append(PacketLoss)
+                PacketLossMin = str(min(PacketLossTempList)) + "%"
+            else:
+                PacketLossMin = "空数据"
             PacketLossMinList.append(PacketLossMin)
 
         return PacketLossMinList
@@ -258,16 +282,19 @@ class GetDetailedInformation(object):
         SoundPacketLossTempList = []
         SoundPacketLossMinList = []
         for item in range(self.List_len()):
-            isQualified = self.AvailableMeetingList()[item]["c2cquality"]
-            isQualifiedstr = isQualified.encode("utf-8")
-            isQualifiedList = isQualified.split("|")
-            for item in range(len(isQualifiedList)):
-                isQualifiedList2 = isQualifiedList[item].split("/")
-                isQualifiedCountList.append(isQualifiedList2)
-            for item in range(len(isQualifiedList)):
-                SoundPacketLoss = int(isQualifiedCountList[item][5])
-                SoundPacketLossTempList.append(SoundPacketLoss)
-            SoundPacketLossMin = str(min(SoundPacketLossTempList)) + "%"
+            if "c2cquality" in self.AvailableMeetingList()[item].keys():
+                isQualified = self.AvailableMeetingList()[item]["c2cquality"]
+                isQualifiedstr = isQualified.encode("utf-8")
+                isQualifiedList = isQualified.split("|")
+                for item in range(len(isQualifiedList)):
+                    isQualifiedList2 = isQualifiedList[item].split("/")
+                    isQualifiedCountList.append(isQualifiedList2)
+                for item in range(len(isQualifiedList)):
+                    SoundPacketLoss = int(isQualifiedCountList[item][5])
+                    SoundPacketLossTempList.append(SoundPacketLoss)
+                SoundPacketLossMin = str(min(SoundPacketLossTempList)) + "%"
+            else:
+                SoundPacketLossMin = "空数据"
             SoundPacketLossMinList.append(SoundPacketLossMin)
 
         return SoundPacketLossMinList
@@ -278,25 +305,32 @@ class GetDetailedInformation(object):
         DetailDataTempList = []
         DetailDataList = []
         for item in range(self.List_len()):
-            isQualified = self.AvailableMeetingList()[item]["c2cquality"]
-            isQualifiedstr = isQualified.encode("utf-8")
-            isQualifiedList = isQualified.split("|")
-            for item in range(len(isQualifiedList)):
-                isQualifiedList2 = isQualifiedList[item].split("/")
-                isQualifiedCountList.append(isQualifiedList2)
-            for item in range(len(isQualifiedList)):
-                MainCaller = isQualifiedCountList[item][0].encode("utf-8")
-                BackupCaller = isQualifiedCountList[item][1].encode("utf-8")
-                Qualified = int(isQualifiedCountList[item][2])
-                PacketLoss = str(isQualifiedCountList[item][3]) + "%"
-                SoundPacketLoss = str(isQualifiedCountList[item][5]) + "%"
-                if Qualified == 1:
-                    QualifiedName = "合格"
-                else:
-                    QualifiedName = "不合格"
-                DetailDataName = MainCaller + "->" + BackupCaller + "|" + QualifiedName + "|" + PacketLoss + "|" + SoundPacketLoss
+            if "c2cquality" in self.AvailableMeetingList()[item].keys():
+                isQualified = self.AvailableMeetingList()[item]["c2cquality"]
+                isQualifiedstr = isQualified.encode("utf-8")
+                isQualifiedList = isQualified.split("|")
+                for item in range(len(isQualifiedList)):
+                    isQualifiedList2 = isQualifiedList[item].split("/")
+                    isQualifiedCountList.append(isQualifiedList2)
+                for item in range(len(isQualifiedList)):
+                    MainCaller = isQualifiedCountList[item][0].encode("utf-8")
+                    BackupCaller = isQualifiedCountList[item][1].encode("utf-8")
+                    Qualified = int(isQualifiedCountList[item][2])
+                    PacketLoss = str(isQualifiedCountList[item][3]) + "%"
+                    SoundPacketLoss = str(isQualifiedCountList[item][5]) + "%"
+                    if Qualified == 1:
+                        QualifiedName = "合格"
+                    else:
+                        QualifiedName = "不合格"
+                    DetailDataName = MainCaller + "->" + BackupCaller + "|" + QualifiedName + "|" + PacketLoss + "|" + SoundPacketLoss
+                    DetailDataTempList.append(DetailDataName)
+            else:
+                DetailDataName = "空数据"
                 DetailDataTempList.append(DetailDataName)
             DetailDataList.append(DetailDataTempList)
+            DetailDataTempList = []
+
+        return DetailDataList
 
     #开会人数
     def MeetingPeopleNumber(self):
@@ -313,18 +347,6 @@ class GetDetailedInformation(object):
                     continue
             MeetingPeopelNumberTemp = len(MeetingPeopleNumberTempList)
             MeetingPeopleNumberList.append(MeetingPeopelNumberTemp)
+            MeetingPeopleNumberTempList = []
 
         return MeetingPeopleNumberList
-
-a = GetDetailedInformation(MeetingApi.GetInfo())
-a.AvailableMeetingList()
-a.List_len()
-a.GetPtoPTotal()
-a.PacketLossAverage()
-a.SoundPacketLossAverage()
-a.PacketLossMax()
-a.SoundPacketLossMax()
-a.PacketLossMin()
-a.SoundPacketLossMin()
-a.MeetingPeopleNumber()
-a.DetailData()
