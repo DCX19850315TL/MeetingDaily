@@ -9,6 +9,7 @@
 #导入系统模块
 import os
 import sys
+import re
 import ConfigParser
 import urllib
 import urllib2
@@ -20,11 +21,29 @@ from common.logger import logger
 #解决python的str默认是ascii编码，和unicode编码冲突
 reload(sys)
 sys.setdefaultencoding('utf8')
+#去除BOM_UTF8编码的\xef\xbb\xbf
+def DeleteBOM_UTF8(file_name):
+    file_temp = []
+    f = open(file_name,'r')
+    for line in f.readlines():
+        if '\xef\xbb\xbf' in line:
+            data = line.replace('\xef\xbb\xbf','')
+        else:
+            data = line
+        file_temp.append(data)
+    fw = open(file_name,'w')
+    fw.truncate()
+    for item in file_temp:
+        fw.writelines(item)
+    fw.close()
+    f.close()
 #设置配置文件
 path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 seeting_file = os.path.join(path,'conf\seeting.ini')
+DeleteBOM_UTF8(seeting_file)
 conf = ConfigParser.ConfigParser()
 conf.read(seeting_file)
+#conf.read(seeting_file)
 #设置全局变量
 #起始时间
 starttime = conf.get("time","starttime")
