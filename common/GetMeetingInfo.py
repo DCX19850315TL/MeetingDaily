@@ -38,12 +38,12 @@ def DeleteBOM_UTF8(file_name):
     fw.close()
     f.close()
 #设置配置文件
-path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
-seeting_file = os.path.join(path,'conf\seeting.ini')
+#path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+#seeting_file = os.path.join(path,'conf\seeting.ini')
+seeting_file = os.path.join(os.path.abspath('conf'),'seeting.ini')
 DeleteBOM_UTF8(seeting_file)
 conf = ConfigParser.ConfigParser()
 conf.read(seeting_file)
-#conf.read(seeting_file)
 #设置全局变量
 #起始时间
 starttime = conf.get("time","starttime")

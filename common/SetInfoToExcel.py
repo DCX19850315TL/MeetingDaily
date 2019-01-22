@@ -19,18 +19,20 @@ from common.logger import logger
 #设置当前时间的变量
 time = time.strftime("%Y_%m_%d_%H_%M_%S", time.localtime())
 #设定上一层目录
-path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
-excel_file = os.path.join(path,"MeetingDaily.xlsx")
-excel_backup_file = os.path.join(path,"excel_backup\MeetingDaily_%s.xlsx" %(time))
+#path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+#excel_file = os.path.join(path,"MeetingDaily.xlsx")
+#excel_backup_file = os.path.join(path,"excel_backup\MeetingDaily_%s.xlsx" %(time))
+excel_file = os.path.join(os.path.abspath(''),'MeetingDaily.xlsx')
+excel_backup_file = os.path.join(os.path.abspath('excel_backup'),'MeetingDaily_%s.xlsx' % (time))
 MeetingApi = GetMeetingInfo(MeetingLoginApi, LoginApiParams, Headers)
 MeetingApi.Login()
 MeetingApi = GetMeetingInfo(GetMeetingInfoApi, GetInfoApiParams, Headers)
 MeetingApi.GetInfo()
 MeetingInfo = GetDetailedInformation(MeetingApi.GetInfo())
-#会议个数
-MeetingLen = MeetingInfo.List_len()
 
 def SetInfoToExcel():
+    # 会议个数
+    MeetingLen = MeetingInfo.List_len()
     if os.path.isfile(excel_file):
         shutil.move(excel_file,excel_backup_file)
     Header = {"A1":"序号","B1":"会议号","C1":"会议时间","D1":"持续时间","E1":"端到端总体合格率","F1":"平均合格率","G1":"端到端最高合格率","H1":"端到端最低合格率","I1":"不合格端到端明细数据","J1":"开会方数","K1":"用户列表","L1":"设备类型"}
