@@ -57,6 +57,8 @@ GetMeetingInfoApi = conf.get("api","GetMeetingInfo")
 MeetingType = conf.get("entName","type")
 #企业用户中心获取视频号信息接口
 GetUserInfoApi = conf.get("api","GetUserInfo")
+#会议开会时间
+MeetingTime = int(conf.get("time","meetingtime"))
 #POST请求头的信息
 Headers = {"Content-type": "application/x-www-form-urlencoded","X-Requested-With":"XMLHttpRequest"}
 #登陆请求的参数
@@ -107,7 +109,10 @@ class GetDetailedInformation(object):
         AvailableMeetingList = []
         for item in range(len(self.MeetingInfo["items"])):
             userCount = self.MeetingInfo["items"][item]["userCount"]
+            meetingtime = self.MeetingInfo["items"][item]["duration"]
             if userCount == 1:
+                continue
+            elif MeetingTime != 0 and meetingtime < MeetingTime:
                 continue
             else:
                 AvailableMeetingList.append(self.MeetingInfo["items"][item])

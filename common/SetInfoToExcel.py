@@ -35,7 +35,7 @@ def SetInfoToExcel():
     MeetingLen = MeetingInfo.List_len()
     if os.path.isfile(excel_file):
         shutil.move(excel_file,excel_backup_file)
-    Header = {"A1":"序号","B1":"会议号","C1":"会议时间","D1":"持续时间","E1":"端到端总体合格率","F1":"平均合格率","G1":"端到端最高合格率","H1":"端到端最低合格率","I1":"不合格端到端明细数据","J1":"开会方数","K1":"用户列表","L1":"设备类型"}
+    Header = {"A1":"序号","B1":"会议号","C1":"会议时间","D1":"持续时间","E1":"端到端总体合格率","F1":"平均合格率","G1":"端到端最高合格率","H1":"端到端最低合格率","I1":"端到端|合格状态|丢包率|空音包","J1":"开会方数","K1":"用户列表","L1":"设备类型"}
     wb = Workbook()
     ws = wb.active
     for k,v in Header.items():
