@@ -9,3 +9,26 @@
 2019-01-24 10:57:02,740 C:/Users/tanglei/PycharmProjects/MeetingDaily/MeetingDaily.py(24): INFO 会议日报写入excel完成
 2019-01-24 10:57:44,470 C:/Users/tanglei/PycharmProjects/MeetingDaily/MeetingDaily.py(24): INFO 会议日报写入excel完成
 2019-01-24 10:58:59,670 C:/Users/tanglei/PycharmProjects/MeetingDaily/MeetingDaily.py(24): INFO 会议日报写入excel完成
+2019-01-25 15:34:37,611 MeetingDaily.py(24): INFO 会议日报写入excel完成 MainProcess - MainThread <module>
+2019-01-25 15:38:14,538 - MeetingDaily.py(24)-(MainProcess - MainThread <module>): INFO - 会议日报写入excel完成
+2019-01-25 15:40:54,658 - MeetingDaily.py(24 - MainProcess - MainThread - <module>）: INFO 会议日报写入excel完成
+2019-01-25 15:42:53,296 MeetingDaily.py(24 - MainProcess - MainThread - <module>): INFO 会议日报写入excel完成
+2019-01-30 14:35:16,279 GetMeetingInfo.py(99 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tanglei\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 92, in GetInfo
+    response = urllib2.urlopen(request, timeout=30)
+  File "D:\2Develop\python2.7\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2Develop\python2.7\lib\urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "D:\2Develop\python2.7\lib\urllib2.py", line 447, in _open
+    '_open', req)
+  File "D:\2Develop\python2.7\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2Develop\python2.7\lib\urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "D:\2Develop\python2.7\lib\urllib2.py", line 1198, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 10060] >
+
+2019-01-30 16:54:54,674 MeetingDaily.py(24 - MainProcess - MainThread - <module>): INFO 会议日报写入excel完成
+2019-01-30 17:05:14,145 MeetingDaily.py(24 - MainProcess - MainThread - <module>): INFO 会议日报写入excel完成

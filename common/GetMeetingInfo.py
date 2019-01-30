@@ -178,6 +178,7 @@ class GetDetailedInformation(object):
                 PtoPTotalQualifiedPercent = "空数据"
             PtoPTotalQualifiedPercentList.append(PtoPTotalQualifiedPercent)
             isQualifiedSum = 0
+            isQualifiedCountList = []
 
         return PtoPTotalQualifiedPercentList
 
@@ -203,6 +204,7 @@ class GetDetailedInformation(object):
                 PacketLossAverage = "空数据"
             PacketLossAverageList.append(PacketLossAverage)
             PacketLossSum = 0
+            isQualifiedCountList = []
 
         return PacketLossAverageList
 
@@ -228,6 +230,7 @@ class GetDetailedInformation(object):
                 SoundPacketLossAverage = "空数据"
             SoundPacketLossAverageList.append(SoundPacketLossAverage)
             SoundPacketLossSum = 0
+            isQualifiedCountList = []
 
         return SoundPacketLossAverageList
 
@@ -251,6 +254,8 @@ class GetDetailedInformation(object):
             else:
                 PacketLossMax = "空数据"
             PacketLossMaxList.append(PacketLossMax)
+            isQualifiedCountList = []
+            PacketLossTempList = []
 
         return PacketLossMaxList
 
@@ -274,6 +279,8 @@ class GetDetailedInformation(object):
             else:
                 SoundPacketLossMax = "空数据"
             SoundPacketLossMaxList.append(SoundPacketLossMax)
+            isQualifiedCountList = []
+            SoundPacketLossTempList = []
 
         return SoundPacketLossMaxList
 
@@ -297,6 +304,8 @@ class GetDetailedInformation(object):
             else:
                 PacketLossMin = "空数据"
             PacketLossMinList.append(PacketLossMin)
+            isQualifiedCountList = []
+            PacketLossTempList = []
 
         return PacketLossMinList
 
@@ -320,6 +329,8 @@ class GetDetailedInformation(object):
             else:
                 SoundPacketLossMin = "空数据"
             SoundPacketLossMinList.append(SoundPacketLossMin)
+            isQualifiedCountList = []
+            SoundPacketLossTempList = []
 
         return SoundPacketLossMinList
 
@@ -348,11 +359,14 @@ class GetDetailedInformation(object):
                         QualifiedName = "不合格"
                     DetailDataName = MainCaller + "->" + BackupCaller + "|" + QualifiedName + "|" + PacketLoss + "|" + SoundPacketLoss
                     DetailDataTempList.append(DetailDataName)
+                DetailDataList.append(DetailDataTempList)
+                isQualifiedCountList = []
+                DetailDataTempList = []
             else:
                 DetailDataName = "空数据"
                 DetailDataTempList.append(DetailDataName)
-            DetailDataList.append(DetailDataTempList)
-            DetailDataTempList = []
+                DetailDataList.append(DetailDataTempList)
+                DetailDataTempList = []
 
         return DetailDataList
 
