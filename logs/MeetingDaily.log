@@ -32,3 +32,8 @@ URLError: <urlopen error [Errno 10060] >
 
 2019-01-30 16:54:54,674 MeetingDaily.py(24 - MainProcess - MainThread - <module>): INFO 会议日报写入excel完成
 2019-01-30 17:05:14,145 MeetingDaily.py(24 - MainProcess - MainThread - <module>): INFO 会议日报写入excel完成
+2019-04-24 09:48:03,391 MeetingDaily.py(27 - MainProcess - MainThread - <module>): INFO 会议日报写入excel完成
+2019-04-24 09:48:39,193 MeetingDaily.py(35 - MainProcess - MainThread - <module>): INFO 按照用户筛选的日报写入excel完成
+2019-04-24 09:56:07,904 MeetingDaily.py(27 - MainProcess - MainThread - <module>): INFO 会议日报写入excel完成
+2019-04-24 10:32:02,323 MeetingDaily.py(35 - MainProcess - MainThread - <module>): INFO 按照用户筛选的日报写入excel完成
+2019-04-24 10:32:28,055 MeetingDaily.py(35 - MainProcess - MainThread - <module>): INFO 按照用户筛选的日报写入excel完成

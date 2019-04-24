@@ -10,17 +10,30 @@
 from common.logger import logger
 from common.GetMeetingInfo import GetMeetingInfo,GetDetailedInformation
 from common.GetMeetingInfo import MeetingLoginApi,GetMeetingInfoApi,LoginApiParams,GetInfoApiParams,Headers
-from common.SetInfoToExcel import SetInfoToExcel
+from common.GetMeetingInfo import meeting_switch,user_switch
+from common.SetInfoToExcel import SetInfoToExcel,SetNubeInfoToExcel
 
 if __name__ == "__main__":
-    #判断是否有会议召开
-    MeetingApi = GetMeetingInfo(MeetingLoginApi, LoginApiParams, Headers)
-    MeetingApi.Login()
-    MeetingApi = GetMeetingInfo(GetMeetingInfoApi, GetInfoApiParams, Headers)
-    MeetingInfoDict = MeetingApi.GetInfo()
-    if "items" in MeetingInfoDict.keys():
-        #将所有信息写入到excel中
-        SetInfoToExcel()
-        logger().info("会议日报写入excel完成")
+
+    if meeting_switch == 1:
+        #判断是否有会议召开
+        MeetingApi = GetMeetingInfo(MeetingLoginApi, LoginApiParams, Headers)
+        MeetingApi.Login()
+        MeetingApi = GetMeetingInfo(GetMeetingInfoApi, GetInfoApiParams, Headers)
+        MeetingInfoDict = MeetingApi.GetInfo()
+        if "items" in MeetingInfoDict.keys():
+            #将所有信息写入到excel中
+            SetInfoToExcel()
+            logger().info("会议日报写入excel完成")
+        else:
+            logger().info("该时间段内没有会议召开")
     else:
-        logger().info("该时间段内没有会议召开")
+        print "商业用户会议报表输出关闭"
+    if user_switch == 1:
+        # 将用户的会议信息写入到excel中
+        SetNubeInfoToExcel()
+        logger().info("按照用户筛选的日报写入excel完成")
+    else:
+        print "按用户筛选的报表输出关闭"
+
+

@@ -38,7 +38,7 @@ def GetUserNameInfo():
                 UserStr = urllib.urlencode(UserParams)
                 NewUrl = GetUserInfoApi + "?" + UserStr
                 request = urllib2.Request(url=NewUrl,headers=Headers)
-                response = urllib2.urlopen(request,timeout=30)
+                response = urllib2.urlopen(request,timeout=60)
                 response_result = response.read()
                 response_dict = json.loads(response_result)
                 for i in response_dict["users"]:
@@ -73,7 +73,7 @@ def GetUserDeviceType():
                 UserStr = urllib.urlencode(UserParams)
                 NewUrl = GetUserInfoApi + "?" + UserStr
                 request = urllib2.Request(url=NewUrl, headers=Headers)
-                response = urllib2.urlopen(request,timeout=30)
+                response = urllib2.urlopen(request,timeout=60)
                 response_result = response.read()
                 response_dict = json.loads(response_result)
                 DeviceType = response_dict["users"][0]["deviceType"]
@@ -107,7 +107,7 @@ def GetUserAll():
                 UserStr = urllib.urlencode(UserParams)
                 NewUrl = GetUserInfoApi + "?" + UserStr
                 request = urllib2.Request(url=NewUrl, headers=Headers)
-                response = urllib2.urlopen(request, timeout=30)
+                response = urllib2.urlopen(request, timeout=60)
                 response_result = response.read()
                 response_dict = json.loads(response_result)
                 for i in response_dict["users"]:

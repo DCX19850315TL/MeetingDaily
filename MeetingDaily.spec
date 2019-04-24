@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['MeetingDaily.py'],
-             pathex=['C:\\Users\\tanglei\\PycharmProjects\\MeetingDaily'],
+             pathex=['C:\\Users\\tangl\\PycharmProjects\\MeetingDaily'],
              binaries=[],
              datas=[],
              hiddenimports=[],

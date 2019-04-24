@@ -38,8 +38,10 @@ def DeleteBOM_UTF8(file_name):
     fw.close()
     f.close()
 #设置配置文件
-#path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
-#seeting_file = os.path.join(path,'conf\seeting.ini')
+'''
+path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+seeting_file = os.path.join(path,'conf\seeting.ini')
+'''
 seeting_file = os.path.join(os.path.abspath('conf'),'seeting.ini')
 DeleteBOM_UTF8(seeting_file)
 conf = ConfigParser.ConfigParser()
@@ -65,6 +67,25 @@ Headers = {"Content-type": "application/x-www-form-urlencoded","X-Requested-With
 LoginApiParams = urllib.urlencode({"username":"admin","userpwd":"654321"})
 #获取会议信息的参数
 GetInfoApiParams = urllib.urlencode({"userId":"","meetingId":"","relayId":"","startTime":starttime,"endTime":endtime,"currPage":1,"directionType":"undefined","companyName":MeetingType})
+#获取指定视频号信息
+NubeNumber = conf.get("number_time","number")
+NubeNumberList = NubeNumber.split(",")
+#获取指定视频号的起始时间
+NubeStartTime = conf.get("number_time","starttime")
+#获取指定视频号的结束时间
+NubeEndTime = conf.get("number_time","endtime")
+#获取指定视频号的会议信息参数
+def GetNubeInfoApiParams():
+
+    NubeNumberCountList = []
+    for item in NubeNumberList:
+        NubeInfoApiDict = urllib.urlencode({"userId":item,"meetingId":"","relayId":"","startTime":NubeStartTime,"endTime":NubeEndTime,"currPage":1,"directionType":"undefined","companyName":""})
+        NubeNumberCountList.append(NubeInfoApiDict)
+    return NubeNumberCountList
+#获取大网商业用户的报表输出开启状态
+meeting_switch = int(conf.get("time","switch"))
+#获取按用户筛选的报表输出开启状态
+user_switch = int(conf.get("number_time","switch"))
 
 #根据配置文件获取指定时间点的会议信息
 class GetMeetingInfo(object):
@@ -81,7 +102,7 @@ class GetMeetingInfo(object):
             opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
             urllib2.install_opener(opener)
             request = urllib2.Request(url=self.Url,data=self.Params,headers=self.Headers)
-            response = urllib2.urlopen(request,timeout=30)
+            response = urllib2.urlopen(request,timeout=60)
         except:
             s = traceback.format_exc()
             logger().error(s)
@@ -89,11 +110,27 @@ class GetMeetingInfo(object):
     def GetInfo(self):
         try:
             request = urllib2.Request(url=self.Url,data=self.Params,headers=self.Headers)
-            response = urllib2.urlopen(request, timeout=30)
+            response = urllib2.urlopen(request, timeout=60)
             response_result = response.read()
             response_dict = json.loads(response_result)
 
             return response_dict
+        except:
+            s = traceback.format_exc()
+            logger().error(s)
+
+    #传递循环的个数
+    def GetNubeInfo(self):
+        try:
+            NubeNumberCountList = []
+            for item in self.Params:
+                request = urllib2.Request(url=self.Url,data=item,headers=self.Headers)
+                response = urllib2.urlopen(request,timeout=60)
+                response_result = response.read()
+                response_dict = json.loads(response_result)
+                NubeNumberCountList.append(response_dict)
+
+            return NubeNumberCountList
         except:
             s = traceback.format_exc()
             logger().error(s)
