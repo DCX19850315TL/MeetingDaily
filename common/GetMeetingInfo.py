@@ -16,6 +16,7 @@ import urllib2
 import cookielib
 import json
 import traceback
+import hashlib
 #导入自定义模块
 from common.logger import logger
 #解决python的str默认是ascii编码，和unicode编码冲突
@@ -55,6 +56,10 @@ endtime = conf.get("time","endtime")
 MeetingLoginApi = conf.get("api","MeetingLogin")
 #会议分析获取会议信息接口
 GetMeetingInfoApi = conf.get("api","GetMeetingInfo")
+#会议页面登录用户名
+UserName = hashlib.md5(conf.get("api","username")).hexdigest()
+#会议页面登录密码
+PassWord = hashlib.md5(conf.get("api","password")).hexdigest()
 #会议类型
 MeetingType = conf.get("entName","type")
 #企业用户中心获取视频号信息接口
@@ -64,9 +69,9 @@ MeetingTime = int(conf.get("time","meetingtime"))
 #POST请求头的信息
 Headers = {"Content-type": "application/x-www-form-urlencoded","X-Requested-With":"XMLHttpRequest"}
 #登陆请求的参数
-LoginApiParams = urllib.urlencode({"username":"admin","userpwd":"654321"})
+LoginApiParams = urllib.urlencode({"username":UserName,"userpwd":PassWord})
 #获取会议信息的参数
-GetInfoApiParams = urllib.urlencode({"userId":"","meetingId":"","relayId":"","startTime":starttime,"endTime":endtime,"currPage":1,"directionType":"undefined","companyName":MeetingType})
+GetInfoApiParams = urllib.urlencode({"userId":"","meetingId":"","relayId":"","startTime":starttime,"endTime":endtime,"currPage":1,"directionType":"undefined","companyName":MeetingType,"qosVersion":""})
 #获取指定视频号信息
 NubeNumber = conf.get("number_time","number")
 NubeNumberList = NubeNumber.split(",")
@@ -79,7 +84,7 @@ def GetNubeInfoApiParams():
 
     NubeNumberCountList = []
     for item in NubeNumberList:
-        NubeInfoApiDict = urllib.urlencode({"userId":item,"meetingId":"","relayId":"","startTime":NubeStartTime,"endTime":NubeEndTime,"currPage":1,"directionType":"undefined","companyName":""})
+        NubeInfoApiDict = urllib.urlencode({"userId":item,"meetingId":"","relayId":"","startTime":NubeStartTime,"endTime":NubeEndTime,"currPage":1,"directionType":"undefined","companyName":"","qosVersion":""})
         NubeNumberCountList.append(NubeInfoApiDict)
     return NubeNumberCountList
 #获取大网商业用户的报表输出开启状态

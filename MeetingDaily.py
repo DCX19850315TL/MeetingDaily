@@ -22,18 +22,26 @@ if __name__ == "__main__":
         MeetingApi = GetMeetingInfo(GetMeetingInfoApi, GetInfoApiParams, Headers)
         MeetingInfoDict = MeetingApi.GetInfo()
         if "items" in MeetingInfoDict.keys():
+            print "时间范围内有商业用户进行开会".encode("GBK")
+            logger().info("时间范围内有商业用户进行开会")
             #将所有信息写入到excel中
             SetInfoToExcel()
-            logger().info("会议日报写入excel完成")
+            print "会议日报全部写入到excel"
+            logger().info("会议日报全部写入到excel")
         else:
-            logger().info("该时间段内没有会议召开")
+            print "该时间段内没有会议召开".encode("GBK")
+            logger().error("该时间段内没有会议召开")
     else:
-        print "商业用户会议报表输出关闭"
+        print "商业用户会议报表输出关闭".encode("GBK")
+        logger().error("商业用户会议报表输出关闭")
+
     if user_switch == 1:
         # 将用户的会议信息写入到excel中
         SetNubeInfoToExcel()
+        print "按照用户筛选的日报写入excel完成".encode("GBK")
         logger().info("按照用户筛选的日报写入excel完成")
     else:
-        print "按用户筛选的报表输出关闭"
+        print "按用户筛选的报表输出关闭".encode("GBK")
+        logger().error("按用户筛选的报表输出关闭")
 
 

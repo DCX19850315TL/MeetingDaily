@@ -50,6 +50,8 @@ def SetInfoToExcel():
         ws[k] = v
         wb.save(excel_file)
     for item in range(MeetingLen):
+        print "登录WebShow获取一个会议信息和视频号对应的昵称+设备类型".encode("GBK")
+        logger().info('登录WebShow获取一个会议信息和视频号对应的昵称+设备类型')
         Body = {"A%d" % (item + 2): item + 1,
                 "B%d" % (item + 2): MeetingInfo.GetMeetingNumber()[item],
                 "C%d" % (item + 2): MeetingInfo.GetMeetingTime()[item],
@@ -65,9 +67,15 @@ def SetInfoToExcel():
                 "J%d" % (item + 2): MeetingInfo.MeetingPeopleNumber()[item],
                 "K%d" % (item + 2): "\n".join(GetUserAll()[0][item]),
                 "L%d" % (item + 2): "\n".join(GetUserAll()[1][item])}
+        print "获取会议信息和视频号信息完毕".encode("GBK")
+        logger().info("获取会议信息和视频号信息完毕")
+        print "往excel开始写入数据".encode("GBK")
+        logger().info("往excel开始写入数据")
         for k,v in Body.items():
             ws[k] = v
             wb.save(excel_file)
+        print "往excel写入数据完毕".encode("GBK")
+        logger().info("往excel写入数据完毕")
 
 def SetNubeInfoToExcel():
     NubeLen = len(NubeMeetingInfo)

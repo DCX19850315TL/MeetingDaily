@@ -11,6 +11,7 @@ import urllib
 import urllib2
 import json
 import sys
+from retrying import retry
 #解决python的str默认是ascii编码，和unicode编码冲突
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -86,6 +87,7 @@ def GetUserDeviceType():
     return DeviceTypeInfoList
 
 #共同获取用户名和设备类型
+@retry(stop_max_attempt_number=3,wait_fixed=2000)
 def GetUserAll():
     UserNameInfoListTemp = []
     UserNameInfoList = []
@@ -97,6 +99,8 @@ def GetUserAll():
     MeetingApi.GetInfo()
     UserAlllist = GetDetailedInformation(MeetingApi.GetInfo())
     UserAllAvailableList = UserAlllist.AvailableMeetingList()
+    print "从企业用户中心根据视频号获取昵称+设备类型开始".encode("GBK")
+    logger().info("从企业用户中心根据视频号获取昵称+设备类型开始")
     for item in range(len(UserAllAvailableList)):
         UserIdList = UserAllAvailableList[item]["userIdList"]
         for item in range(len(UserIdList)):
@@ -110,12 +114,18 @@ def GetUserAll():
                 response = urllib2.urlopen(request, timeout=60)
                 response_result = response.read()
                 response_dict = json.loads(response_result)
-                for i in response_dict["users"]:
-                    if "nickName" in i.keys():
-                        nickName = i["nickName"]
-                    else:
-                        nickName = "未命名"
-                DeviceType = response_dict["users"][0]["deviceType"]
+                if response_dict["users"] == []:
+                    nickName = "未命名"
+                    DeviceType = "未知"
+                else:
+                    for i in response_dict["users"]:
+                        if "nickName" in i.keys():
+                            nickName = i["nickName"]
+                        else:
+                            nickName = "未命名"
+                    DeviceType = response_dict["users"][0]["deviceType"]
+                    if DeviceType == "":
+                        DeviceType = response_dict["users"][0]["appType"]
                 UserNameInfo = "%s-%s" % (User,nickName)
                 DeviceTypeInfo = "%s-%s" % (User,DeviceType)
                 UserNameInfoListTemp.append(UserNameInfo)
@@ -127,4 +137,6 @@ def GetUserAll():
         UserDeviceTypeInfoList.append(UserDeviceTypeInfoListTemp)
         UserDeviceTypeInfoListTemp = []
 
+    print "获取企业用户中心数据结束".encode("GBK")
+    logger().info("获取企业用户中心数据结束")
     return (UserNameInfoList,UserDeviceTypeInfoList)

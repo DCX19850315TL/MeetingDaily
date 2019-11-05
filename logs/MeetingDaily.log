@@ -1,39 +1,1503 @@
-2019-01-22 16:02:46,805 C:/Users/tanglei/PycharmProjects/MeetingDaily/MeetingDaily.py(29): INFO 2019-01-22 16:02:25 会议日报写入excel完成
-2019-01-22 16:12:30,694 C:/Users/tanglei/PycharmProjects/MeetingDaily/MeetingDaily.py(26): INFO 该时间段内没有会议召开
-2019-01-22 16:13:04,792 C:/Users/tanglei/PycharmProjects/MeetingDaily/MeetingDaily.py(26): INFO 该时间段内没有会议召开
-2019-01-22 16:13:54,621 C:/Users/tanglei/PycharmProjects/MeetingDaily/MeetingDaily.py(26): INFO 该时间段内没有会议召开
-2019-01-22 16:14:42,453 C:/Users/tanglei/PycharmProjects/MeetingDaily/MeetingDaily.py(24): INFO 会议日报写入excel完成
-2019-01-22 16:30:00,874 C:/Users/tanglei/PycharmProjects/MeetingDaily/MeetingDaily.py(24): INFO 会议日报写入excel完成
-2019-01-24 10:53:22,555 C:/Users/tanglei/PycharmProjects/MeetingDaily/MeetingDaily.py(24): INFO 会议日报写入excel完成
-2019-01-24 10:54:10,062 C:/Users/tanglei/PycharmProjects/MeetingDaily/MeetingDaily.py(24): INFO 会议日报写入excel完成
-2019-01-24 10:57:02,740 C:/Users/tanglei/PycharmProjects/MeetingDaily/MeetingDaily.py(24): INFO 会议日报写入excel完成
-2019-01-24 10:57:44,470 C:/Users/tanglei/PycharmProjects/MeetingDaily/MeetingDaily.py(24): INFO 会议日报写入excel完成
-2019-01-24 10:58:59,670 C:/Users/tanglei/PycharmProjects/MeetingDaily/MeetingDaily.py(24): INFO 会议日报写入excel完成
-2019-01-25 15:34:37,611 MeetingDaily.py(24): INFO 会议日报写入excel完成 MainProcess - MainThread <module>
-2019-01-25 15:38:14,538 - MeetingDaily.py(24)-(MainProcess - MainThread <module>): INFO - 会议日报写入excel完成
-2019-01-25 15:40:54,658 - MeetingDaily.py(24 - MainProcess - MainThread - <module>）: INFO 会议日报写入excel完成
-2019-01-25 15:42:53,296 MeetingDaily.py(24 - MainProcess - MainThread - <module>): INFO 会议日报写入excel完成
-2019-01-30 14:35:16,279 GetMeetingInfo.py(99 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
-  File "C:\Users\tanglei\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 92, in GetInfo
-    response = urllib2.urlopen(request, timeout=30)
-  File "D:\2Develop\python2.7\lib\urllib2.py", line 154, in urlopen
-    return opener.open(url, data, timeout)
-  File "D:\2Develop\python2.7\lib\urllib2.py", line 429, in open
-    response = self._open(req, data)
-  File "D:\2Develop\python2.7\lib\urllib2.py", line 447, in _open
-    '_open', req)
-  File "D:\2Develop\python2.7\lib\urllib2.py", line 407, in _call_chain
-    result = func(*args)
-  File "D:\2Develop\python2.7\lib\urllib2.py", line 1228, in http_open
-    return self.do_open(httplib.HTTPConnection, req)
-  File "D:\2Develop\python2.7\lib\urllib2.py", line 1198, in do_open
-    raise URLError(err)
-URLError: <urlopen error [Errno 10060] >
+2019-08-22 15:44:34,335 MeetingDaily.py(26 - MainProcess - MainThread - <module>): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-22 15:45:46,565 MeetingDaily.py(26 - MainProcess - MainThread - <module>): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-22 15:50:27,739 MeetingDaily.py(26 - MainProcess - MainThread - <module>): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-22 15:56:37 MeetingDaily.py(26 - MainProcess - MainThread - <module>): INFO 时间范围内有商业用户进行开会
+2019-08-22 15:56:37 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-22 15:56:40 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-22 15:57:09 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-22 15:57:22 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-22 15:57:25 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-22 15:57:40 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-22 15:57:40 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-22 15:57:40 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-22 15:57:41 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-22 15:57:41 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-22 15:57:44 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-22 16:03:39 MeetingDaily.py(26 - MainProcess - MainThread - <module>): INFO 时间范围内有商业用户进行开会
+2019-08-22 16:03:39 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-22 16:03:43 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-22 16:04:06 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-22 16:04:09 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-22 16:04:23 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-22 16:04:23 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-22 16:04:23 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-22 16:04:23 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-22 16:04:23 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-22 16:04:27 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-22 16:04:40 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-22 16:06:56 MeetingDaily.py(26 - MainProcess - MainThread - <module>): INFO 时间范围内有商业用户进行开会
+2019-08-22 16:06:57 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-22 16:07:02 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-22 16:07:18 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-22 16:07:23 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-22 16:08:16 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-22 16:19:27 MeetingDaily.py(26 - MainProcess - MainThread - <module>): INFO 时间范围内有商业用户进行开会
+2019-08-22 16:19:27 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-22 16:19:30 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-22 16:20:51 MeetingDaily.py(26 - MainProcess - MainThread - <module>): INFO 时间范围内有商业用户进行开会
+2019-08-22 16:20:51 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-22 16:20:53 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "urllib2.py", line 154, in urlopen
+  File "urllib2.py", line 429, in open
+  File "urllib2.py", line 447, in _open
+  File "urllib2.py", line 407, in _call_chain
+  File "urllib2.py", line 1228, in http_open
+  File "urllib2.py", line 1201, in do_open
+  File "httplib.py", line 1136, in getresponse
+  File "httplib.py", line 453, in begin
+  File "httplib.py", line 409, in _read_status
+  File "socket.py", line 480, in readline
+KeyboardInterrupt
 
-2019-01-30 16:54:54,674 MeetingDaily.py(24 - MainProcess - MainThread - <module>): INFO 会议日报写入excel完成
-2019-01-30 17:05:14,145 MeetingDaily.py(24 - MainProcess - MainThread - <module>): INFO 会议日报写入excel完成
-2019-04-24 09:48:03,391 MeetingDaily.py(27 - MainProcess - MainThread - <module>): INFO 会议日报写入excel完成
-2019-04-24 09:48:39,193 MeetingDaily.py(35 - MainProcess - MainThread - <module>): INFO 按照用户筛选的日报写入excel完成
-2019-04-24 09:56:07,904 MeetingDaily.py(27 - MainProcess - MainThread - <module>): INFO 会议日报写入excel完成
-2019-04-24 10:32:02,323 MeetingDaily.py(35 - MainProcess - MainThread - <module>): INFO 按照用户筛选的日报写入excel完成
-2019-04-24 10:32:28,055 MeetingDaily.py(35 - MainProcess - MainThread - <module>): INFO 按照用户筛选的日报写入excel完成
+2019-08-22 16:20:55 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 09:57:28 MeetingDaily.py(26 - MainProcess - MainThread - <module>): INFO 时间范围内有商业用户进行开会
+2019-08-27 09:57:28 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 09:57:29 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 09:57:31 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 09:57:32 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 09:57:33 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 09:57:33 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 09:57:33 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 09:57:34 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 09:57:34 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 09:57:35 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 09:57:36 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 09:57:38 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 09:57:39 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 09:57:39 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 09:57:39 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 09:57:40 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 09:57:40 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 09:57:41 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 09:57:42 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 09:57:43 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 09:57:45 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 09:57:45 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 09:57:45 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 09:57:45 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 09:57:45 MeetingDaily.py(30 - MainProcess - MainThread - <module>): INFO 会议日报全部写入到excel
+2019-08-27 09:57:45 MeetingDaily.py(45 - MainProcess - MainThread - <module>): ERROR 按用户筛选的报表输出关闭
+2019-08-27 10:03:08 MeetingDaily.py(26 - MainProcess - MainThread - <module>): INFO 时间范围内有商业用户进行开会
+2019-08-27 10:03:08 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 10:03:11 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:03:17 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:03:20 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:03:38 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:03:38 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 10:03:38 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 10:03:38 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 10:03:38 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 10:03:41 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:04:01 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:04:04 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:04:17 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:04:17 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 10:04:17 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 10:04:17 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 10:04:17 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 10:04:20 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:04:27 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:04:30 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:04:41 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:04:41 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 10:04:41 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 10:04:41 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 10:04:41 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 10:04:45 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:04:53 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:04:58 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:05:16 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:05:16 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 10:05:16 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 10:05:17 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 10:05:17 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 10:05:20 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:06:37 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:06:44 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:07:40 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:07:51 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:07:51 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 10:07:51 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 10:07:51 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 10:07:51 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 10:07:55 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:08:08 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:08:21 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:08:50 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:08:50 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 10:08:50 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 10:08:51 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 10:08:51 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 10:08:54 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:09:09 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:09:13 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:09:20 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:09:20 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 10:09:20 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 10:09:20 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 10:09:20 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 10:09:23 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:09:29 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:09:32 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:09:46 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:09:46 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 10:09:46 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 10:09:47 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 10:09:47 MeetingDaily.py(30 - MainProcess - MainThread - <module>): INFO 会议日报全部写入到excel
+2019-08-27 10:09:47 MeetingDaily.py(45 - MainProcess - MainThread - <module>): ERROR 按用户筛选的报表输出关闭
+2019-08-27 10:15:12 MeetingDaily.py(26 - MainProcess - MainThread - <module>): INFO 时间范围内有商业用户进行开会
+2019-08-27 10:15:13 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 10:15:16 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:15:35 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:15:38 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:15:53 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:15:53 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 10:15:53 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 10:15:53 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 10:15:53 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 10:15:56 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:16:20 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:16:23 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:17:34 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:17:42 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:17:42 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 10:17:42 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 10:17:42 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 10:17:42 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 10:17:46 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:17:53 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:17:58 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:19:10 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:19:18 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:19:18 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 10:19:18 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 10:19:18 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 10:19:18 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 10:19:22 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:19:41 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:19:45 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:19:50 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:19:50 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 10:19:50 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 10:19:50 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 10:19:50 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 10:19:54 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:19:59 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:20:03 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:20:07 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:20:07 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 10:20:07 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 10:20:07 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 10:20:07 MeetingDaily.py(30 - MainProcess - MainThread - <module>): INFO 会议日报全部写入到excel
+2019-08-27 10:20:07 MeetingDaily.py(45 - MainProcess - MainThread - <module>): ERROR 按用户筛选的报表输出关闭
+2019-08-27 10:27:01 MeetingDaily.py(26 - MainProcess - MainThread - <module>): INFO 时间范围内有商业用户进行开会
+2019-08-27 10:27:01 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 10:27:03 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:28:07 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:28:11 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:28:13 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:28:14 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:28:14 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 10:28:14 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 10:28:15 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 10:28:15 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 10:28:19 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:28:22 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:28:23 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:28:25 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:28:25 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 10:28:25 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 10:28:25 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 10:28:25 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 10:28:27 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:28:28 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:28:30 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:28:31 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:28:31 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 10:28:31 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 10:28:31 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 10:28:31 MeetingDaily.py(30 - MainProcess - MainThread - <module>): INFO 会议日报全部写入到excel
+2019-08-27 10:28:31 MeetingDaily.py(45 - MainProcess - MainThread - <module>): ERROR 按用户筛选的报表输出关闭
+2019-08-27 10:48:28 MeetingDaily.py(26 - MainProcess - MainThread - <module>): INFO 时间范围内有商业用户进行开会
+2019-08-27 10:48:29 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 10:48:32 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:48:39 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:48:42 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:48:49 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:48:49 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 10:48:49 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 10:48:50 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 10:48:50 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 10:48:52 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:50:06 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:50:14 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:50:17 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:50:51 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:51:09 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:51:10 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 10:51:10 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 10:51:10 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 10:51:10 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 10:51:13 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:51:20 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:51:23 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:51:34 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:51:34 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 10:51:34 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 10:51:34 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 10:51:34 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 10:51:37 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:51:44 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:51:46 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:51:55 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:51:55 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 10:51:55 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 10:51:55 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 10:51:55 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 10:51:58 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:52:05 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:52:08 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:52:15 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:52:15 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 10:52:15 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 10:52:15 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 10:52:15 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 10:52:18 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:52:26 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:52:29 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:52:36 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:52:36 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 10:52:36 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 10:52:37 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 10:52:37 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 10:52:39 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:52:47 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:52:50 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:52:59 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:52:59 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 10:52:59 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 10:52:59 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 10:52:59 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 10:53:02 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:53:09 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:53:12 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:53:20 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:53:20 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 10:53:20 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 10:53:20 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 10:53:20 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-08-27 10:53:23 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:53:30 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:53:32 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-08-27 10:53:40 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-08-27 10:53:40 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-08-27 10:53:40 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-08-27 10:53:40 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-08-27 10:53:40 MeetingDaily.py(30 - MainProcess - MainThread - <module>): INFO 会议日报全部写入到excel
+2019-08-27 10:53:40 MeetingDaily.py(45 - MainProcess - MainThread - <module>): ERROR 按用户筛选的报表输出关闭
+2019-11-05 10:59:00 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 10:59:00 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 10:59:00 GetMeetingInfo.py(136 - MainProcess - MainThread - GetNubeInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 128, in GetNubeInfo
+    response = urllib2.urlopen(request,timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 10:59:00 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 10:59:34 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 10:59:34 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 10:59:34 GetMeetingInfo.py(136 - MainProcess - MainThread - GetNubeInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 128, in GetNubeInfo
+    response = urllib2.urlopen(request,timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 10:59:35 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 10:59:43 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 10:59:43 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 10:59:43 GetMeetingInfo.py(136 - MainProcess - MainThread - GetNubeInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 128, in GetNubeInfo
+    response = urllib2.urlopen(request,timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 10:59:43 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:11:53 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:11:53 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:11:53 GetMeetingInfo.py(136 - MainProcess - MainThread - GetNubeInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 128, in GetNubeInfo
+    response = urllib2.urlopen(request,timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:11:53 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:16:42 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:16:42 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:16:42 GetMeetingInfo.py(136 - MainProcess - MainThread - GetNubeInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 128, in GetNubeInfo
+    response = urllib2.urlopen(request,timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:16:42 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:18:06 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:18:06 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:18:06 GetMeetingInfo.py(136 - MainProcess - MainThread - GetNubeInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 128, in GetNubeInfo
+    response = urllib2.urlopen(request,timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:18:06 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:19:45 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:19:45 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:19:45 GetMeetingInfo.py(136 - MainProcess - MainThread - GetNubeInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 128, in GetNubeInfo
+    response = urllib2.urlopen(request,timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:19:45 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:20:05 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:20:05 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:20:05 GetMeetingInfo.py(136 - MainProcess - MainThread - GetNubeInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 128, in GetNubeInfo
+    response = urllib2.urlopen(request,timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:20:06 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:23:56 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:23:56 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:23:56 GetMeetingInfo.py(136 - MainProcess - MainThread - GetNubeInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 128, in GetNubeInfo
+    response = urllib2.urlopen(request,timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:23:57 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:25:37 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:25:37 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:25:37 GetMeetingInfo.py(136 - MainProcess - MainThread - GetNubeInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 128, in GetNubeInfo
+    response = urllib2.urlopen(request,timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:25:37 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:25:44 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:25:44 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:25:47 GetMeetingInfo.py(136 - MainProcess - MainThread - GetNubeInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 128, in GetNubeInfo
+    response = urllib2.urlopen(request,timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:25:47 GetMeetingInfo.py(120 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 113, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:26:58 GetMeetingInfo.py(122 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 115, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:26:58 GetMeetingInfo.py(122 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 115, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:26:58 GetMeetingInfo.py(138 - MainProcess - MainThread - GetNubeInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 130, in GetNubeInfo
+    response = urllib2.urlopen(request,timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:26:58 GetMeetingInfo.py(122 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 115, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:27:16 GetMeetingInfo.py(122 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 115, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:27:16 GetMeetingInfo.py(122 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 115, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:27:16 GetMeetingInfo.py(138 - MainProcess - MainThread - GetNubeInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 130, in GetNubeInfo
+    response = urllib2.urlopen(request,timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:27:16 GetMeetingInfo.py(122 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 115, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:27:23 GetMeetingInfo.py(122 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 115, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:27:23 GetMeetingInfo.py(122 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 115, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:27:23 GetMeetingInfo.py(138 - MainProcess - MainThread - GetNubeInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 130, in GetNubeInfo
+    response = urllib2.urlopen(request,timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:27:23 GetMeetingInfo.py(122 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 115, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:37:30 GetMeetingInfo.py(123 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 116, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:37:30 GetMeetingInfo.py(123 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 116, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:37:30 GetMeetingInfo.py(139 - MainProcess - MainThread - GetNubeInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 131, in GetNubeInfo
+    response = urllib2.urlopen(request,timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 11:37:30 GetMeetingInfo.py(123 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 116, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 14:43:10 GetMeetingInfo.py(127 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 120, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 14:43:10 GetMeetingInfo.py(127 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 120, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 14:43:10 GetMeetingInfo.py(143 - MainProcess - MainThread - GetNubeInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 135, in GetNubeInfo
+    response = urllib2.urlopen(request,timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 14:43:10 GetMeetingInfo.py(127 - MainProcess - MainThread - GetInfo): ERROR Traceback (most recent call last):
+  File "C:\Users\tangl\PycharmProjects\MeetingDaily\common\GetMeetingInfo.py", line 120, in GetInfo
+    response = urllib2.urlopen(request, timeout=60)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "D:\2dev\environment\python2.7.12\lib\urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 900: 
+
+2019-11-05 14:44:15 MeetingDaily.py(26 - MainProcess - MainThread - <module>): INFO 时间范围内有商业用户进行开会
+2019-11-05 14:44:15 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-11-05 14:44:18 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:44:23 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-11-05 14:44:27 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:44:31 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-11-05 14:44:31 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-11-05 14:44:31 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-11-05 14:44:31 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-11-05 14:44:31 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-11-05 14:44:34 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:44:55 MeetingDaily.py(26 - MainProcess - MainThread - <module>): INFO 时间范围内有商业用户进行开会
+2019-11-05 14:44:56 MeetingDaily.py(30 - MainProcess - MainThread - <module>): INFO 会议日报全部写入到excel
+2019-11-05 14:44:56 MeetingDaily.py(45 - MainProcess - MainThread - <module>): ERROR 按用户筛选的报表输出关闭
+2019-11-05 14:46:12 MeetingDaily.py(26 - MainProcess - MainThread - <module>): INFO 时间范围内有商业用户进行开会
+2019-11-05 14:46:12 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-11-05 14:46:15 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:46:22 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-11-05 14:46:25 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:46:29 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-11-05 14:46:29 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-11-05 14:46:29 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-11-05 14:46:30 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-11-05 14:46:30 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-11-05 14:46:33 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:46:37 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-11-05 14:46:40 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:46:45 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-11-05 14:46:45 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-11-05 14:46:45 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-11-05 14:46:45 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-11-05 14:46:45 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-11-05 14:46:48 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:46:53 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-11-05 14:46:55 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:47:00 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-11-05 14:47:00 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-11-05 14:47:00 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-11-05 14:47:00 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-11-05 14:47:00 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-11-05 14:47:04 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:47:08 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-11-05 14:47:12 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:47:16 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-11-05 14:47:16 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-11-05 14:47:16 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-11-05 14:47:16 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-11-05 14:47:16 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-11-05 14:47:20 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:47:25 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-11-05 14:47:28 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:47:33 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-11-05 14:47:33 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-11-05 14:47:33 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-11-05 14:47:33 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-11-05 14:47:33 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-11-05 14:47:37 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:47:41 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-11-05 14:47:45 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:47:49 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-11-05 14:47:49 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-11-05 14:47:49 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-11-05 14:47:50 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-11-05 14:47:50 MeetingDaily.py(30 - MainProcess - MainThread - <module>): INFO 会议日报全部写入到excel
+2019-11-05 14:47:50 MeetingDaily.py(45 - MainProcess - MainThread - <module>): ERROR 按用户筛选的报表输出关闭
+2019-11-05 14:54:26 MeetingDaily.py(26 - MainProcess - MainThread - <module>): INFO 时间范围内有商业用户进行开会
+2019-11-05 14:54:26 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-11-05 14:54:30 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:54:36 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-11-05 14:54:39 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:54:47 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-11-05 14:54:47 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-11-05 14:54:47 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-11-05 14:54:47 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-11-05 14:54:47 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-11-05 14:54:51 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:54:56 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-11-05 14:54:59 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:55:04 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-11-05 14:55:04 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-11-05 14:55:04 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-11-05 14:55:04 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-11-05 14:55:04 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-11-05 14:55:07 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:55:12 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-11-05 14:55:15 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:55:24 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-11-05 14:55:24 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-11-05 14:55:24 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-11-05 14:55:24 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-11-05 14:55:24 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-11-05 14:55:27 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:55:32 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-11-05 14:55:36 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:55:46 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-11-05 14:55:47 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-11-05 14:55:47 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-11-05 14:55:47 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-11-05 14:55:47 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-11-05 14:55:50 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:56:01 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-11-05 14:56:05 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:56:20 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-11-05 14:56:20 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-11-05 14:56:20 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-11-05 14:56:20 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-11-05 14:56:20 SetInfoToExcel.py(54 - MainProcess - MainThread - SetInfoToExcel): INFO 登录WebShow获取一个会议信息和视频号对应的昵称+设备类型
+2019-11-05 14:56:23 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:56:30 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-11-05 14:56:33 GetUserInfo.py(103 - MainProcess - MainThread - GetUserAll): INFO 从企业用户中心根据视频号获取昵称+设备类型开始
+2019-11-05 14:56:58 GetUserInfo.py(141 - MainProcess - MainThread - GetUserAll): INFO 获取企业用户中心数据结束
+2019-11-05 14:56:58 SetInfoToExcel.py(71 - MainProcess - MainThread - SetInfoToExcel): INFO 获取会议信息和视频号信息完毕
+2019-11-05 14:56:58 SetInfoToExcel.py(73 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel开始写入数据
+2019-11-05 14:56:58 SetInfoToExcel.py(78 - MainProcess - MainThread - SetInfoToExcel): INFO 往excel写入数据完毕
+2019-11-05 14:56:58 MeetingDaily.py(30 - MainProcess - MainThread - <module>): INFO 会议日报全部写入到excel
+2019-11-05 14:56:58 MeetingDaily.py(45 - MainProcess - MainThread - <module>): ERROR 按用户筛选的报表输出关闭
